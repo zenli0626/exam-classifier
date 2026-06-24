@@ -1,0 +1,50 @@
+[
+  {
+    "ref": "NS-1",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-2",
+    "subtopic_id": "nt.digit"
+  },
+  {
+    "ref": "NS-3",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-4",
+    "subtopic_id": "arith.ops"
+  },
+  {
+    "ref": "NS-5",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-6",
+    "subtopic_id": "nt.mod"
+  },
+  {
+    "ref": "NS-7",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-8",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-9",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-10",
+    "subtopic_id": "arith.est"
+  },
+  {
+    "ref": "NS-11",
+    "subtopic_id": "arith.numlit"
+  },
+  {
+    "ref": "NS-12",
+    "subtopic_id": "arith.numlit"
+  }
+]

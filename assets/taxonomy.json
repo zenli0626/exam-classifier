@@ -1,0 +1,1038 @@
+[
+  {
+    "topic": "Arithmetic",
+    "topic_id": "arith",
+    "subtopics": [
+      {
+        "id": "arith.ops",
+        "name": "Order of operations & mixed-operation expressions",
+        "signals": [
+          "mixed + - * / in one expression",
+          "parentheses",
+          "exponent inside an expression",
+          "absolute value",
+          "PEMDAS"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "Merged draft 'Order of operations' with integer/negative-number operations, which the draft omitted entirely. Negatives are E/M staple (MATHCOUNTS Sprint)."
+      },
+      {
+        "id": "arith.frac",
+        "name": "Fractions, decimals & percents",
+        "signals": [
+          "fraction",
+          "decimal",
+          "percent",
+          "convert",
+          "equivalent",
+          "repeating decimal"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "Draft had separate 'Percent applications' \u2014 merged here; percent IS a fraction/decimal representation. Percent-change and percent-of problems share the same classifier signals."
+      },
+      {
+        "id": "arith.ratio",
+        "name": "Ratios & proportions",
+        "signals": [
+          "ratio",
+          "proportion",
+          "in the ratio",
+          "scale",
+          "similar quantities"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": {
+          "secondary": "geom.similar"
+        },
+        "notes": "Kept separate from rates \u2014 ratio problems are structural (part:part, part:whole); distinct classifier."
+      },
+      {
+        "id": "arith.rate",
+        "name": "Rates, speed & unit conversion",
+        "signals": [
+          "rate",
+          "speed",
+          "distance",
+          "miles per hour",
+          "unit conversion",
+          "miles per gallon"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": {
+          "secondary": "alg.word"
+        },
+        "notes": "D=RT word problems appear here; the algebraic framing is secondary."
+      },
+      {
+        "id": "arith.numlit",
+        "name": "Mental computation & number-sense shortcuts",
+        "signals": [
+          "single operation",
+          "two-digit square (n^2)",
+          "x11 / x99 / near-100 trick",
+          "chained same-operation product",
+          "multi-term same-operation sum"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "MATHCOUNTS Number Sense event + mathleague timed-round staple. Kept from draft; signals are distinct."
+      },
+      {
+        "id": "arith.est",
+        "name": "Estimation & rounding",
+        "signals": [
+          "estimate",
+          "approximate",
+          "round to the nearest",
+          "closest to",
+          "between which two"
+        ],
+        "bands": [
+          "E"
+        ],
+        "cross_topic": null,
+        "notes": "Primarily grades 3\u20135; fades at middle school. Real classifier trigger: 'estimate' or 'approximately'."
+      },
+      {
+        "id": "arith.roman",
+        "name": "Roman numerals",
+        "signals": [
+          "roman numeral",
+          "DCCC"
+        ],
+        "bands": [
+          "E"
+        ],
+        "cross_topic": null
+      }
+    ]
+  },
+  {
+    "topic": "Algebra",
+    "topic_id": "alg",
+    "subtopics": [
+      {
+        "id": "alg.linear",
+        "name": "Linear equations & inequalities",
+        "signals": [
+          "solve for x",
+          "linear equation",
+          "inequality",
+          "at least",
+          "no more than",
+          "one variable"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Core M/H. Inequality signals ('at least', 'no more than') distinguish from pure equation problems."
+      },
+      {
+        "id": "alg.systems",
+        "name": "Systems of equations",
+        "signals": [
+          "system of equations",
+          "two equations",
+          "substitution",
+          "elimination",
+          "simultaneously"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": null
+      },
+      {
+        "id": "alg.quad",
+        "name": "Quadratics",
+        "signals": [
+          "quadratic",
+          "x squared",
+          "parabola",
+          "discriminant",
+          "Vieta",
+          "sum of roots",
+          "product of roots",
+          "factor the polynomial"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Vieta's formulas are a major AMC/AIME signal \u2014 added as explicit keyword. Appears occasionally at late M (MATHCOUNTS State)."
+      },
+      {
+        "id": "alg.poly",
+        "name": "Polynomials",
+        "signals": [
+          "polynomial",
+          "remainder theorem",
+          "factor theorem",
+          "degree",
+          "leading coefficient",
+          "synthetic division"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Distinct from quadratics; remainder/factor theorem are H-only signals."
+      },
+      {
+        "id": "alg.exponents",
+        "name": "Exponents & radicals",
+        "signals": [
+          "exponent",
+          "power",
+          "square root",
+          "cube root",
+          "radical",
+          "simplify",
+          "scientific notation"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "nt.primes"
+        },
+        "notes": "Cross-topic: prime factorization often underlies radical simplification."
+      },
+      {
+        "id": "alg.func",
+        "name": "Functions & function notation",
+        "signals": [
+          "f(x)",
+          "function",
+          "domain",
+          "range",
+          "input/output",
+          "composition",
+          "inverse function"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Rare at M; standard AMC 10/12 territory. Added 'composition' and 'inverse function' as H-level signals."
+      },
+      {
+        "id": "alg.seq",
+        "name": "Sequences & series",
+        "signals": [
+          "arithmetic sequence",
+          "geometric sequence",
+          "common difference",
+          "common ratio",
+          "sum of series",
+          "nth term"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "nt.pattern"
+        },
+        "notes": "Arithmetic sequences appear at MATHCOUNTS M-level; geometric + series sums are H. Cross-topic with number patterns."
+      },
+      {
+        "id": "alg.log",
+        "name": "Logarithms",
+        "signals": [
+          "log",
+          "logarithm",
+          "ln",
+          "natural log",
+          "log base",
+          "change of base"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Strictly H (AMC 10/12, AIME). Rarely appears below 9th grade context."
+      },
+      {
+        "id": "alg.absval",
+        "name": "Absolute value equations & inequalities",
+        "signals": [
+          "absolute value",
+          "|x|",
+          "distance from zero",
+          "case analysis"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Kept as standalone \u2014 the casework structure is a distinct classifier signal vs. plain linear inequalities."
+      },
+      {
+        "id": "alg.word",
+        "name": "Algebraic word problems",
+        "signals": [
+          "together they",
+          "work rate",
+          "age problem",
+          "mixture",
+          "coin",
+          "digits of a number"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "arith.rate"
+        },
+        "notes": "RESTORED from draft removal. 'Algebraic word problems' is a real category in AoPS and MATHCOUNTS \u2014 mixture/age/work-rate problems have distinct surface signals that don't map cleanly to any single algebraic subtopic. Kept but signals tightened to word-problem surface forms only."
+      }
+    ]
+  },
+  {
+    "topic": "Geometry",
+    "topic_id": "geom",
+    "subtopics": [
+      {
+        "id": "geom.angles",
+        "name": "Angles & lines",
+        "signals": [
+          "angle",
+          "parallel lines",
+          "transversal",
+          "supplementary",
+          "complementary",
+          "vertical angles"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": null
+      },
+      {
+        "id": "geom.triangles",
+        "name": "Triangles",
+        "signals": [
+          "triangle",
+          "equilateral",
+          "isosceles",
+          "right triangle",
+          "altitude",
+          "median",
+          "angle sum"
+        ],
+        "bands": [
+          "E",
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "geom.pyth"
+        },
+        "notes": "Triangle properties span all bands. Pythagorean theorem separated out as its own subtopic (ADDED)."
+      },
+      {
+        "id": "geom.pyth",
+        "name": "Pythagorean theorem & Pythagorean triples",
+        "signals": [
+          "Pythagorean theorem",
+          "right triangle legs",
+          "hypotenuse",
+          "3-4-5",
+          "Pythagorean triple",
+          "distance formula"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "nt.dioph",
+          "reason": "Pythagorean triples are a Diophantine topic in AMC/AIME"
+        },
+        "notes": "ADDED. Not in draft but is one of the highest-frequency M/H signals in mathleague, MATHCOUNTS, and AMC 8/10. Distinct from general triangle properties."
+      },
+      {
+        "id": "geom.area",
+        "name": "Perimeter, area & surface area",
+        "signals": [
+          "perimeter",
+          "area",
+          "surface area",
+          "rectangle",
+          "square",
+          "polygon",
+          "composite figure"
+        ],
+        "bands": [
+          "E",
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Kept. Surface area absorbed here (was implicit in draft's 'Solid geometry')."
+      },
+      {
+        "id": "geom.circles",
+        "name": "Circles",
+        "signals": [
+          "circle",
+          "radius",
+          "diameter",
+          "circumference",
+          "arc",
+          "sector",
+          "chord",
+          "tangent",
+          "inscribed angle"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Inscribed angle theorem and tangent-chord angle added as H signals (frequent AMC)."
+      },
+      {
+        "id": "geom.coord",
+        "name": "Coordinate geometry",
+        "signals": [
+          "coordinate",
+          "slope",
+          "midpoint",
+          "x-intercept",
+          "y-intercept",
+          "graph",
+          "equation of a line",
+          "distance formula"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "alg.linear"
+        },
+        "notes": "Slope/intercept problems straddle algebra and geometry \u2014 primary here, secondary algebra."
+      },
+      {
+        "id": "geom.solid",
+        "name": "Solid geometry & volume",
+        "signals": [
+          "volume",
+          "cube",
+          "prism",
+          "pyramid",
+          "cylinder",
+          "cone",
+          "sphere",
+          "3D"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Separated surface area into geom.area so solid geometry focuses on volume and 3D reasoning."
+      },
+      {
+        "id": "geom.transform",
+        "name": "Transformations & symmetry",
+        "signals": [
+          "reflection",
+          "rotation",
+          "translation",
+          "symmetry",
+          "line of symmetry",
+          "congruent after"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "Primarily E/M at mathleague level; rarely a standalone H subtopic in competition math."
+      },
+      {
+        "id": "geom.similar",
+        "name": "Similar figures & scale",
+        "signals": [
+          "similar",
+          "scale factor",
+          "proportional sides",
+          "AA similarity",
+          "shadow",
+          "map scale"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "arith.ratio"
+        },
+        "notes": "Renamed from draft 'Similar-figure ratios' \u2014 the 'ratio' framing is secondary; primary signal is the similarity relationship."
+      },
+      {
+        "id": "geom.trig",
+        "name": "Trigonometry",
+        "signals": [
+          "sine",
+          "cosine",
+          "tangent",
+          "trig ratio",
+          "law of sines",
+          "law of cosines",
+          "unit circle"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "H-only. Law of Sines/Cosines added \u2014 these are AIME-level signals not in draft."
+      }
+    ]
+  },
+  {
+    "topic": "Number Theory",
+    "topic_id": "nt",
+    "subtopics": [
+      {
+        "id": "nt.divis",
+        "name": "Divisibility rules",
+        "signals": [
+          "divisible by",
+          "divisibility rule",
+          "divisor",
+          "factor of",
+          "divides evenly"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": null
+      },
+      {
+        "id": "nt.primes",
+        "name": "Primes & prime factorization",
+        "signals": [
+          "prime",
+          "composite",
+          "prime factorization",
+          "factor tree",
+          "fundamental theorem of arithmetic"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "alg.exponents"
+        },
+        "notes": "Cross-topic: prime factorization underpins radical simplification and exponent laws."
+      },
+      {
+        "id": "nt.gcdlcm",
+        "name": "GCD & LCM",
+        "signals": [
+          "greatest common divisor",
+          "least common multiple",
+          "GCD",
+          "LCM",
+          "GCF",
+          "Euclidean algorithm"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Euclidean algorithm added \u2014 MATHCOUNTS and AMC both test it explicitly."
+      },
+      {
+        "id": "nt.mod",
+        "name": "Modular arithmetic & remainders",
+        "signals": [
+          "remainder",
+          "modulo",
+          "congruent mod",
+          "clock arithmetic",
+          "last digit",
+          "units digit"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "nt.digit"
+        },
+        "notes": "Last/units-digit problems are the most common surface form \u2014 cross-listed with digit problems."
+      },
+      {
+        "id": "nt.divisors",
+        "name": "Divisor counting & sum of divisors",
+        "signals": [
+          "number of divisors",
+          "sum of divisors",
+          "tau function",
+          "how many factors",
+          "perfect number"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "nt.primes"
+        },
+        "notes": "Divisor-count formula requires prime factorization \u2014 tightly coupled. Added 'sum of divisors' and perfect numbers (AoPS standard)."
+      },
+      {
+        "id": "nt.bases",
+        "name": "Number bases & representation",
+        "signals": [
+          "base 2",
+          "binary",
+          "base 10",
+          "hexadecimal",
+          "convert to base",
+          "digits in base"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": null
+      },
+      {
+        "id": "nt.digit",
+        "name": "Digit problems",
+        "signals": [
+          "units digit",
+          "tens digit",
+          "sum of digits",
+          "digit product",
+          "two-digit number",
+          "three-digit number",
+          "place value"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": {
+          "secondary": "nt.mod"
+        },
+        "notes": "More elementary than full modular arithmetic. Place value and digit-sum problems are E-level; units-digit patterns bridge to nt.mod at M/H."
+      },
+      {
+        "id": "nt.dioph",
+        "name": "Diophantine equations",
+        "signals": [
+          "integer solutions",
+          "positive integers",
+          "whole number solutions",
+          "how many pairs",
+          "ax + by = c"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "geom.pyth"
+        },
+        "notes": "Pythagorean triples are the most famous Diophantine equation \u2014 cross-listed."
+      },
+      {
+        "id": "nt.pattern",
+        "name": "Parity, patterns & number properties",
+        "signals": [
+          "odd",
+          "even",
+          "parity",
+          "alternating",
+          "pattern in sequence",
+          "sum of first n",
+          "consecutive integers"
+        ],
+        "bands": [
+          "E",
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "alg.seq"
+        },
+        "notes": "Added 'consecutive integers' \u2014 a high-frequency E/M surface form (sum of consecutive integers, product of consecutive). Cross-listed with sequences."
+      }
+    ]
+  },
+  {
+    "topic": "Combinatorics",
+    "topic_id": "comb",
+    "subtopics": [
+      {
+        "id": "comb.fund",
+        "name": "Fundamental counting principle",
+        "signals": [
+          "how many ways",
+          "choices",
+          "multiplication principle",
+          "for each",
+          "total arrangements"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "The entry-level counting subtopic \u2014 signals are high frequency and distinct from permutation/combination vocabulary."
+      },
+      {
+        "id": "comb.perm",
+        "name": "Permutations",
+        "signals": [
+          "permutation",
+          "arrange",
+          "order matters",
+          "n P r",
+          "factorial",
+          "in how many orders"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": null
+      },
+      {
+        "id": "comb.comb",
+        "name": "Combinations",
+        "signals": [
+          "combination",
+          "choose",
+          "n C r",
+          "select",
+          "group",
+          "team",
+          "committee",
+          "order doesn't matter"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "prob.count"
+        },
+        "notes": "Combinations are the backbone of counting-based probability \u2014 tightly cross-listed."
+      },
+      {
+        "id": "comb.case",
+        "name": "Casework & complementary counting",
+        "signals": [
+          "cases",
+          "at least one",
+          "complement",
+          "total minus",
+          "none of",
+          "except"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "prob.comp"
+        },
+        "notes": "Complementary counting maps directly to complementary probability \u2014 primary in combinatorics, secondary in probability."
+      },
+      {
+        "id": "comb.ie",
+        "name": "Inclusion\u2013exclusion & sets",
+        "signals": [
+          "inclusion-exclusion",
+          "union",
+          "intersection",
+          "Venn diagram",
+          "neither",
+          "both A and B"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "prob.compound"
+        },
+        "notes": "Set intersection/union language appears in both combinatorics and probability contexts."
+      },
+      {
+        "id": "comb.pascal",
+        "name": "Pascal's triangle & binomial theorem",
+        "signals": [
+          "Pascal's triangle",
+          "binomial coefficient",
+          "expand",
+          "binomial theorem",
+          "row of Pascal",
+          "(a+b)^n"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "comb.comb"
+        },
+        "notes": "Renamed from draft 'Binomial coefficients / Pascal' to lead with Pascal's triangle (the more recognizable label at M boundary). Binomial theorem is H-only."
+      },
+      {
+        "id": "comb.pigeonhole",
+        "name": "Pigeonhole principle",
+        "signals": [
+          "pigeonhole",
+          "at least two",
+          "must exist",
+          "guarantee",
+          "drawer principle",
+          "by pigeonhole"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "Rare at M; classic AMC 10/12 and AIME H-level technique. Signals are very specific \u2014 'guarantee' and 'must exist' are strong classifier hints."
+      },
+      {
+        "id": "comb.grid",
+        "name": "Paths, grids & lattice counting",
+        "signals": [
+          "grid",
+          "lattice path",
+          "move right or up",
+          "shortest path",
+          "Pascal connection",
+          "from A to B on grid"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "comb.comb"
+        },
+        "notes": "Grid paths reduce to combinations (C(m+n, m)) \u2014 cross-listed. A real standalone subtopic in MATHCOUNTS and AMC."
+      }
+    ]
+  },
+  {
+    "topic": "Probability",
+    "topic_id": "prob",
+    "subtopics": [
+      {
+        "id": "prob.basic",
+        "name": "Basic single-event probability",
+        "signals": [
+          "probability",
+          "likelihood",
+          "chance",
+          "out of",
+          "favorable outcomes",
+          "sample space"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null,
+        "notes": "Entry-level; simple favorable/total ratio problems. E-level at mathleague."
+      },
+      {
+        "id": "prob.compound",
+        "name": "Compound & independent events",
+        "signals": [
+          "and",
+          "both events",
+          "independent",
+          "with replacement",
+          "two dice",
+          "multiply probabilities"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "comb.ie"
+        },
+        "notes": "AND (intersection) events; independent = multiply. Distinct from conditional."
+      },
+      {
+        "id": "prob.comp",
+        "name": "Complementary probability",
+        "signals": [
+          "at least one",
+          "probability that NOT",
+          "complement",
+          "1 minus",
+          "none of the"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "comb.case"
+        },
+        "notes": "The '1 minus' technique is one of the highest-frequency M/H problem patterns. Kept as standalone."
+      },
+      {
+        "id": "prob.cond",
+        "name": "Conditional probability",
+        "signals": [
+          "given that",
+          "given",
+          "P(A|B)",
+          "without replacement",
+          "conditional",
+          "knowing that"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "H-only. 'Without replacement' is the most common surface trigger at AMC 10 level."
+      },
+      {
+        "id": "prob.ev",
+        "name": "Expected value",
+        "signals": [
+          "expected value",
+          "on average",
+          "expected number",
+          "expected gain",
+          "fair game",
+          "long run"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": null,
+        "notes": "AMC 10/12 and AIME staple. Signals are specific ('expected value', 'on average')."
+      },
+      {
+        "id": "prob.geo",
+        "name": "Geometric probability",
+        "signals": [
+          "geometric probability",
+          "randomly chosen point",
+          "area ratio",
+          "random point in",
+          "length ratio"
+        ],
+        "bands": [
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "geom.area"
+        },
+        "notes": "Requires area/length reasoning \u2014 cross-topic with geometry. H-only in practice."
+      },
+      {
+        "id": "prob.count",
+        "name": "Counting-based probability",
+        "signals": [
+          "how many outcomes",
+          "equally likely",
+          "combinatorial probability",
+          "arrange and count",
+          "from a group of"
+        ],
+        "bands": [
+          "M",
+          "H"
+        ],
+        "cross_topic": {
+          "secondary": "comb.comb"
+        },
+        "notes": "RETAINED (reversed earlier draft decision to remove). After reflection, this IS a real classifier bucket \u2014 problems where the main work is a counting computation (combinations/permutations) to find numerator and denominator. Distinct from single-event or geometric probability. Primary cross-topic with comb.comb."
+      }
+    ]
+  },
+  {
+    "topic": "Statistics",
+    "topic_id": "stat",
+    "subtopics": [
+      {
+        "id": "stat.median",
+        "name": "Median",
+        "signals": [
+          "median",
+          "middle value"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null
+      },
+      {
+        "id": "stat.mean",
+        "name": "Mean",
+        "signals": [
+          "mean",
+          "average"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null
+      },
+      {
+        "id": "stat.mode",
+        "name": "Mode",
+        "signals": [
+          "mode",
+          "most frequent"
+        ],
+        "bands": [
+          "E",
+          "M"
+        ],
+        "cross_topic": null
+      }
+    ]
+  }
+]
