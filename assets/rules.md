@@ -8,6 +8,31 @@ hoping a "smarter" rater guesses right — that is how the gold standard improve
 Key it on the *operative mathematical object* in the question — the thing the
 student actually has to do — not on surface vocabulary.
 
+## Primary-label rule — classify by the SOLVING METHOD, not the surface
+This is the rule for the hardest mis-categorization: a problem that uses several
+knowledge points, or is *disguised* (a geometry-flavored problem that is really
+algebra; a number-theory problem dressed up as algebra). Surface vocabulary lies;
+the solution does not.
+
+- **The primary label = the knowledge point of the step that actually CRACKS the
+  problem** — the bottleneck, the "without this you cannot solve it" step — NOT
+  the scenario it is wrapped in.
+- **Solve-then-label.** Before labeling, the rater must briefly **sketch the
+  solution path and name the single decisive step**, then assign the primary
+  subtopic = the topic of *that step*. You cannot be fooled by a cover story once
+  you have actually solved the problem. (Disguised problems fool a classifier
+  precisely because it read the prompt without solving it.)
+  - geometry-flavored but solved by setting up an equation → `alg.*`
+  - algebra-looking but the key is divisibility / mod → `nt.*`
+- **When several techniques are used, primary = the most advanced / rate-limiting
+  one** (the "ceiling" skill that distinguishes the problem). Basic algebra plus
+  one clever number-theory insight → the number-theory insight is the point.
+- **Capture the others as SECONDARY labels** (multi-label) — don't discard them.
+- **Topic-level disagreement is your detector.** With solve-then-label, raters
+  agree on *topic* ~99% of the time. The rare items where independent raters split
+  at the TOPIC level are the genuine multi-knowledge-point problems → multi-label
+  them or send to a human; everything else is automatic.
+
 ## Tie-break rules (resolve cross-topic ambiguity)
 - A **remainder / mod / divisibility** question → `nt.*` (Number Theory), even if it looks like arithmetic.
 - Anything with a **sample space / "probability"** → `prob.*`.

@@ -31,10 +31,14 @@ ground-truth label set.
 
 2. **Spawn N≥3 INDEPENDENT classifier agents.** Give each the *same* prompt:
    the PDF, the full subtopic list from `assets/taxonomy.json`, and the rules from
-   `assets/rules.md`. Each agent independently assigns exactly one primary
-   subtopic per question and writes `rater_<X>.json` = a JSON list of
-   `{"ref": "...", "subtopic_id": "..."}`. Independence matters — do not let them
-   see each other's output.
+   `assets/rules.md`. Each agent must **solve-then-label** (per the primary-label
+   rule): briefly sketch the solution, name the single decisive step, then assign
+   the primary subtopic = the topic of *that step* — labeling by **solving method,
+   not surface appearance** (this is what stops a disguised algebra-as-geometry or
+   number-theory-as-algebra problem from being mislabeled). It writes
+   `rater_<X>.json` = a JSON list of `{"ref": "...", "subtopic_id": "...",
+   "key_step": "...", "secondary": "..."}` (key_step/secondary optional but
+   recommended). Independence matters — do not let them see each other's output.
 
 3. **Run consensus.** `python scripts/consensus.py rater_*.json`. This prints:
    - **topic** + **subtopic** agreement (unanimous / has-majority / no-consensus),
